@@ -57,6 +57,7 @@ if image is not None:
         
         if response.ok:
             result = response.json()
+            print(result)
             pred_class = result["predicted_class"]
             probabilities = result["class_probabilities"]
 
