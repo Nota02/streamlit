@@ -38,7 +38,7 @@ elif mode == "Рисовать на холсте":
     )
     if canvas_result.image_data is not None:
         image = Image.fromarray((canvas_result.image_data[:, :, :3]).astype(np.uint8))
-        st.image(image, caption="Нарисованное изображение", use_column_width=False)
+        st.image(image, caption="Нарисованное изображение", use_container_width=False)
 
 # --- Отправка изображения на API ---
 if image is not None:
