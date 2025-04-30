@@ -22,7 +22,7 @@ if mode == "Загрузить изображение":
     uploaded_file = st.file_uploader("Выберите изображение", type=["png", "jpg", "jpeg"])
     if uploaded_file:
         image = Image.open(uploaded_file).convert("RGB")
-        st.image(image, caption="Загруженное изображение", use_column_width=True)
+        st.image(image, caption="Загруженное изображение", use_container_width=True)
 
 elif mode == "Рисовать на холсте":
     canvas_result = st_canvas(
