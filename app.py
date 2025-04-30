@@ -15,7 +15,6 @@ model = load_model("model/best_model.keras")
 # Классы
 classes = {0: 'car', 1: 'motorbike', 2: 'bus'}
 
-# Размер входа (подставьте нужный размер!)
 INPUT_SIZE = (128, 128)
 
 def preprocess_image(file: UploadFile) -> np.ndarray:
