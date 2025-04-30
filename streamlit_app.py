@@ -59,7 +59,7 @@ if image is not None:
             result = response.json()
             print(result)
             pred_class = result["predicted_class"]
-            probabilities = result["class_probabilities"]
+            probabilities = result["probabilities"]
 
             st.success(f"Предсказанный класс: **{pred_class}**")
 
