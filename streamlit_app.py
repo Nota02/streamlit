@@ -6,7 +6,7 @@ import io
 import matplotlib.pyplot as plt
 from streamlit_drawable_canvas import st_canvas
 
-API_URL = "http://159.223.232.177:8000/predict"
+API_URL = "http://localhost:8000/predict"
 
 st.set_page_config(page_title="Image Classifier", layout="centered")
 
